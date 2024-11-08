@@ -1,0 +1,192 @@
+// ==UserScript==
+// @name         Fan Translation
+// @namespace    http://tampermonkey.net/
+// @version      2024-11-04
+// @description  Translating menu buttons
+// @author       Copilot/Riptide
+// @run-at       document-start
+// @match        https://narrow.one/
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=narrow.one
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    // Function to replace the text
+    function translateButtonText() {
+        const translatedButtons = document.querySelectorAll('.main-menu-button-text, button.dialog-button, div.mainInfoText, h3.dialogTitle, span.coin-count-text.blueNight, h2.dialogTitle, .dialogText, .stat-class-tooltip');
+        translatedButtons.forEach(untranslatedButton => {
+            switch(untranslatedButton.textContent.trim()) {
+                case 'Click to join':
+                    untranslatedButton.textContent = 'Click to play';
+                    break;
+                    // Main Menu buttons
+                case 'Settings':
+                    untranslatedButton.textContent = 'Settings';
+                    break;
+                case 'Shop':
+                    untranslatedButton.textContent = 'Market';
+                    break;
+                case 'Squad':
+                    untranslatedButton.textContent = 'Teams';
+                    break;
+                case 'Maps':
+                    untranslatedButton.textContent = 'Lobby';
+                    break;
+                case 'Do you automatically want to enter full screen when joining a game? (This can be disabled later in settings)':
+                    untranslatedButton.textContent = 'Auto fullscreen?';
+                    break;
+                case 'Heck Yeah!':
+                    untranslatedButton.textContent = 'Yes';
+                    break;
+                case 'No Thanks':
+                    untranslatedButton.textContent = 'No';
+                    break;
+                case 'Install':
+                    untranslatedButton.textContent = 'Download';
+                    break;
+                case 'Exit Round':
+                    untranslatedButton.textContent = 'Leave game';
+                    break;
+                case 'Join our Discord':
+                    untranslatedButton.textContent = 'Discord';
+                    break;
+                    // Match dialogs
+                case 'Are you sure?':
+                    untranslatedButton.textContent = 'Sure?';
+                    break;
+                case 'You will not earn any coins from this match.':
+                    untranslatedButton.textContent = 'You wont receive coins';
+                    break;
+                case 'You are the squad leader so all members will exit this match too. No one will earn any coins from this match.':
+                    untranslatedButton.textContent = 'YOU ARE SQUAD LEADER';
+                    break;
+                case 'Exit':
+                    untranslatedButton.textContent = 'Leave';
+                    break;
+                case 'stay in game':
+                    untranslatedButton.textContent = 'Nevermind';
+                    break;
+                case 'Connection closed':
+                    untranslatedButton.textContent = 'Error: does not compute';
+                    break;
+                case 'You have been kicked for being afk for too long.':
+                    untranslatedButton.textContent = 'Let someone else have a turn';
+                    break;
+                case 'ok':
+                    untranslatedButton.textContent = 'Ok';
+                    break;
+                    // Squads
+                case 'Invite someone':
+                    untranslatedButton.textContent = 'Gotta date?';
+                    break;
+                case 'Join existing squad':
+                    untranslatedButton.textContent = 'Join squad';
+                    break;
+                case 'Ready':
+                    untranslatedButton.textContent = 'Go!';
+                    break;
+                case 'Start':
+                    untranslatedButton.textContent = 'Start';
+                    break;
+                    // Loadouts
+                case 'Presets':
+                    untranslatedButton.textContent = 'Skins';
+                    break;
+                case 'Preset':
+                    untranslatedButton.textContent = 'Skin';
+                    break;
+                case 'Scout':
+                    untranslatedButton.textContent = 'B1';
+                    break;
+                case 'Assault':
+                    untranslatedButton.textContent = 'B2';
+                    break;
+                case 'Sharpshooter':
+                    untranslatedButton.textContent = 'B3';
+                    break;
+                case 'Runner':
+                    untranslatedButton.textContent = 'B4';
+                    break;
+                case 'Support':
+                    untranslatedButton.textContent = 'B5';
+                    break;
+                case 'Defender':
+                    untranslatedButton.textContent = 'B6';
+                    break;
+                    // Shop
+                case 'Looks':
+                    untranslatedButton.textContent = 'Looks';
+                    break;
+                case 'Gear':
+                    untranslatedButton.textContent = 'Gear';
+                    break;
+                case 'Bow':
+                    untranslatedButton.textContent = 'Bowskin';
+                    break;
+                case 'Arrow':
+                    untranslatedButton.textContent = 'Arrow';
+                    break;
+                case 'Melee':
+                    untranslatedButton.textContent = 'Melee';
+                    break;
+                case 'Rewarded':
+                    untranslatedButton.textContent = 'For the brokies';
+                    break;
+                    // Shop: Looks
+                case 'Skin color':
+                    untranslatedButton.textContent = 'Racism *_*';
+                    break;
+                case 'Hair':
+                    untranslatedButton.textContent = 'Hair';
+                    break;
+                case 'Eyebrows':
+                    untranslatedButton.textContent = 'Eyebrows';
+                    break;
+                case 'Eyes':
+                    untranslatedButton.textContent = 'Eyes';
+                    break;
+                case 'Beard':
+                    untranslatedButton.textContent = 'Beard';
+                    break;
+                case 'Tattoos':
+                    untranslatedButton.textContent = 'Gang affiliation';
+                    break;
+                    // Shop: Gear
+                case 'Head':
+                    untranslatedButton.textContent = 'Top';
+                    break;
+                case 'Torso':
+                    untranslatedButton.textContent = 'Middle 1';
+                    break;
+                case 'Arms':
+                    untranslatedButton.textContent = 'Middle 2';
+                    break;
+                case 'Legs':
+                    untranslatedButton.textContent = 'Bottom';
+                    break;
+                case 'Quiver':
+                    untranslatedButton.textContent = 'Quiver';
+                    break;
+                    // Shop: Stats
+                case 'Movement Speed':
+                    untranslatedButton.textContent = 'Speed'; // Error
+                    break;
+                case 'Damage Protection':
+                    untranslatedButton.textContent = 'Prot Ass'; // Error
+                    break;
+                case 'Health Regen Speed':
+                    untranslatedButton.textContent = 'Regen'; // Error
+                    break;
+                case 'bloodlust':
+                    untranslatedButton.textContent = 'Vampyric ability'; // Error
+                    break;
+            }
+        });
+    }
+    // Initial replacement on page load
+    translateButtonText();
+    // Observe for dynamic content changes
+    const observer = new MutationObserver(translateButtonText);
+    observer.observe(document.body, { childList: true, subtree: true });
+})();
