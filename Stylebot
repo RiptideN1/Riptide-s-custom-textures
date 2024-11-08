@@ -1,0 +1,206 @@
+/* not done yet */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Rye:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+/* Replace most of the fonts */
+/* OPTIONAL: In this section, replace code lines with their commented-out counterparts next to them, to use Dyslexia-friendly font */
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+*:not(pre, pre *, code, .far, .fa, [class*="fa-"], .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, [class*="icon"], .gog-icons, .google-material-icons) {
+    font-family: Ubuntu !important; /* font-family: OpenDyslexic !important; */
+    font-weight: 500; /* font-weight: 700; */
+    text-shadow: 0px 0px 5px black;
+}
+
+/* Animations declared */
+@keyframes rulerSnap{
+  50% {transform: rotate(5deg);}
+}
+@keyframes wave{
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+@keyframes bleed{
+
+}
+
+
+/* Class Select Icons */
+div.class-selection-image-background.wrinkledPaper {
+  /*background-image: url("https://commons.wikimedia.org/wiki/File:Sheba1.JPG");*/
+  background-image: linear-gradient(to bottom right, rgba(207, 173, 50, 1), rgba(0, 163, 168, 1));
+  animation: wave 2s infinite;
+  font-family: Rye;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  border-style: dashed;
+  border-color: #9c27b0;
+}
+h3.dialogTitle.blueNight {
+  text-transform: capitalize;
+  animation: wave 1s infinite;
+  font-family: Rye;
+}
+
+/* Chat Window */
+.chat-log-container {
+  font-size: 25pt;
+  padding:0px, 0px, 0px, 0px;
+  overflow: hidden;
+  max-height: min(800px, 50vh);
+  max-width: min(800px, 50vw);
+  font-family: 'Comic Sans MS'!important;
+}
+.chat-container.wrinkledPaper.up {
+  padding:0px, 0px, 0px, 0px;
+  background:none;
+  height:40%;
+}
+.chat-container{
+  padding:0px, 0px, 0px, 0px;
+  background:none;
+}
+.chat-message-container {
+  padding:0px, 0px, 0px, 0px;
+}
+.chat-message-content {
+  padding:0px, 0px, 0px, 0px;
+}
+.chat-input {
+ font-size: 19pt;
+}
+input.dialog-text-input.wrinkledPaper.chat-input {
+  background:none;
+}
+.chat-message-name {
+  font-size: 14px;
+  font-family: Rye;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  color: #d9d9d9;
+  border-color: #ff00ff;
+  border-style: dotted;
+}
+input::placeholder{
+    font-family: 'Comic Sans MS', sans-serif !important;
+    text-transform: capitalize;
+  font-size: 0px;
+  }
+
+/* Menu Texts */
+div.main-menu-button-text.whiteBigText.blueNight{text-transform: capitalize;
+  font-family: Rye;
+  font-size: 25px;
+  line-height: 48px;
+  border-style: none;}
+button.dialog-button.blueNight.wrinkledPaper {
+  text-transform: capitalize;
+  border-style: double;
+  border-color: #ff00ff;
+}
+h2.dialogTitle.blueNight{text-transform: capitalize;
+  font-family: Playfair Display;
+  color: #ff00ff;
+  border-style: none;}
+div.mainInfoText{text-transform: capitalize;
+  font-family: Rye;}
+h2.paged-view-page-header-title{text-transform: capitalize;}
+
+select.dialog-select-input.blueNight{text-transform: capitalize;}
+div.main-menu-username.whiteBigText {
+ font-weight: 800;
+  background-image: linear-gradient(to middle, rgba(207, 173, 50, 1), rgba(0, 163, 168, 1));
+  animation: rulerSnap 0.5s infinite;
+ animation-timing-function: ease-in-out;
+  font-family: Montserrat; 
+}
+
+/* Kill Notifications */
+.scoreOffsetNotificationAnim {
+  text-transform: capitalize;
+  border-style: none;
+  color: #ff00ff;
+}
+
+/* Misc */
+.gameAd.desktop{
+  display:none;
+  background: none;
+  font-family: Helvetica;
+}
+.gameAd.mobile {
+  display:none;
+  background: none;
+  border-color: #cc0000;
+  border-style: none;
+}
+.touchListener.focus{cursor: default;
+  font-size: 0px;} /* Fixes invisible mouse while pointerLockChange is disabled. */ div.shop-skin-selection-list.shop-class-selection-list {
+  font-family: Rye;
+}
+
+div.buttonImage {
+  color: 100;
+  background-color: 100;
+  border-color: #00ff00;
+  border-style: none;
+}
+
+div.fullScreen {
+  font-weight: 400;
+  font-style: normal;
+  border-style: none;
+  font-family: Merriweather;
+}
+
+div.health-ui-container.wrinkledPaper {
+  background-image: none;
+}
+
+div.health-ui-bar-container {
+  background-image: none;
+  border-style: none;
+}
+
+div.health-ui-bar.bg.wrinkledPaper {
+  background-image: none;
+}
+
+div.health-ui-bar.clip {
+  background-image: none;
+  border-style: dotted;
+  border-color: #ad1457;
+  background-color: #ff00dd;
+}
+
+div.health-ui-bar.main.wrinkledPaper {
+  background-image: none;
+}
+div.health-ui-bar {
+  background-image: none;
+  border-style: none;
+}
+
+div.health-ui-bar.wrinkledPaper.damage-protection {
+  background-image: none;
+}
+
+div.health-ui-bar.border.wrinkledPaper{
+  background-image: none;
+}
+div.health-ui-heart {
+  background-image: none;
+  height: 0px;
+  width: 0px;
+}
+div.touchListener.fullScreen.focus {
+  border-style: none;
+}
