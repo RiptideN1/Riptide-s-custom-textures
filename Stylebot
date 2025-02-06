@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Droid+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
 @import url(https://fonts.googleapis.com/css2?family=Inconsolata:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 
@@ -56,6 +58,7 @@ div.class-selection-image-background.wrinkledPaper {
   font-size: 12px;
   font-weight: 300;
   background-image: none;
+  display: none;
 }
 
 
@@ -133,18 +136,7 @@ div.main-menu-button-text.whiteBigText.blueNight {
 }
 button.dialog-button.blueNight.wrinkledPaper {
   text-transform: capitalize;
-  border-style: solid;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  padding-bottom: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
+  border-style: none;
   color: #00ffff;
   font-size: 22px;
   font-weight: 400;
@@ -231,23 +223,6 @@ div.touchListener.fullScreen.focus {
   border-style: none;
 }
 
-
-div.flag-score-container {
-  border-style: none;
-  margin-right: 20px;
-  margin-top: 1160px;
-}
-
-svg.flag-score-icon {
-  background-image: none;
-}
-
-
-path.flag-score-icon {
-  background-image: none;
-  border: green;
-  border-style: dashed;
-}
 div.weapon-selection-container {
   background-image: none;
 }
@@ -300,6 +275,7 @@ div.dialog.wrinkledPaper {
   border-left-width: 0px;
   padding-right: 0px;
   padding-top: 0px;
+  font-family: Merriweather;
 }
 
 
@@ -312,6 +288,7 @@ h3.settings-group-header {
   color: #78909c;
   font-size: 24px;
   line-height: 12px;
+  display: none;
 }
 
 
@@ -359,30 +336,26 @@ div.dialogButtonsContainer {
 
 
 input.dialog-range-input {
-  background-color: transparent;
+  background-color: #ff4df9;
   background-image: none;
-  border-style: groove;
-  border-color: #607d8b;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  border-style: solid;
+  border-color: #008a60;
   font-size: 36px;
   font-family: Droid Serif;
-  color: #795548;
+  border-radius: 20%;
+  opacity: 85%;
 }
 
 
 div button span {
   font-family: Bokor;
   text-align: left;
-  color: #00eeff;
-  font-size: 24px;
-}
-
-
-div div div {
-  font-family: Rye;
+  color: #ff0aa5;
+  font-size: 15px;
+  border-style: solid;
+  border-color: #08af7d;
+  border-radius: 50%;
+  background-color: #000000
 }
 
 .label.settings-item {
@@ -390,17 +363,6 @@ div div div {
   background-color: transparent;
 }
 
-
-div.linked-accounts {
-  background-image: none;
-  background-color: transparent;
-}
-
-
-div.wrinkledPaper {
-  background-image: none;
-  border-style: none;
-}
 
 
 button.dialog-button.blueNight.wrinkledPaper {
@@ -468,16 +430,12 @@ div.settings-item-slider-value {
 
 
 input.dialog-checkbox-input.wrinkledPaper {
-  border-color: #607d8b;
-  border-style: groove;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
-  color: #7f6000;
+  border-color: #00c78b;
+  border-style: solid;
   font-family: Helvetica;
   background-image: none;
+  border-radius: 50%;
+  border-width: 2px
 }
 
 
@@ -537,12 +495,6 @@ div.coin-icon {
 
 div.ownedCoinsContainer.wrinkledPaper.allow-select {
   text-align: right;
-}
-
-
-div.class-selection-image {
-  border-style: none;
-  border-color: #ff00ff;
 }
 
 
@@ -621,7 +573,6 @@ span.player-list-username {
 
 thead tr th {
   font-family: Bokor;
-  display: none;
 }
 
 
@@ -656,6 +607,7 @@ div.playersListTeam.wrinkledPaper {
   font-family: Bokor;
   position: relative;
   animation: rainbow linear 2s infinite;
+  background-image:none;
 }
 
 
@@ -781,7 +733,6 @@ span.coin-count-text.blueNight {
   font-style: Bold;
   font-family: Bokor;
   color: #00ffff;
-  border-color: transparent;
 }
 
 
@@ -797,10 +748,11 @@ div.in-squad-content {
 
 input.dialog-text-input.blueNight.wrinkledPaper.join-squad-input {
   background-image: none;
-  background-color: black;
   border-style: solid;
   border-color: #00ffff;
-  border-width: 0.1px
+  border-width: 0.1px;
+  background-color: black;
+  width: 200px
 }
 
 div.crosshair-line {
@@ -814,7 +766,8 @@ div.crosshair-line {
   width: 2px;
   height: 1px;
   background-color: #00ffcc;
-  background-size: 150%
+  background-size: 150%;
+  gap: 1%;
 }
 
 
@@ -832,7 +785,7 @@ div.maps-container {
 
 
 h2.map-item-title.blueNight {
-  font-family: Lucida Handwriting;
+  font-family: Montserrat;
   font-size: 24px;
   line-height: 30px;
 }
@@ -880,43 +833,116 @@ div.main-menu-promo-banner.wrinkledPaper.wrinkled-paper-mask {
   background-color: #3c4468;
 }
 
-div.health-ui-heart {
-  background-image: none;
-  height: 0px;
-  width: 0px;
+table tbody tr {
+  height: 1px;
 }
 
-div.health-ui-bar.border.wrinkledPaper{
-  background-image: none;
+div.profile-stats {
+  background-color: #000000;
+  font-family: Inconsolata;
 }
 
-div.health-ui-bar.wrinkledPaper.damage-protection {
-  background-image: none;
+div.profile-container {
+  background-color: #000000;
+  border-style: solid;
+  border-color: #000000;
+  border-bottom-width: 0px;
+  color: #8d6e63;
 }
 
-div.health-ui-bar {
-  background-image: none;
+input.dialog-text-input.blueNight.wrinkledPaper {
+  color: #ff00bb;
+  font-family: Rye;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  text-transform: capitalize;
+  width: 360px;
+}
+
+div.avatar {
+  display: none;
+}
+
+div div div {
+  color: #bc9c29;
+  font-family: Bokor;
+  text-transform: none;
+}
+
+div.profile-stat-icon {
   border-style: none;
-  width: -px;
+  font-family: Droid Sans;
 }
 
-div.health-ui-container.wrinkledPaper {
+div.wrinkledPaper.profile-stat {
+  font-family: Droid Sans;
+}
+
+div.gameoverStatsContainer.wrinkledPaper {
+background-image: none;
+}
+
+tr.tableItem {
   background-image: none;
 }
 
 
-div.health-ui-bar.bg.wrinkledPaper {
+div.class-selection-image-container.wrinkledPaper.wrinkled-paper-mask {
   background-image: none;
 }
 
-
-div.health-ui-bar.clip {
-  border-radius: 10%;
-  border-style: none;
-  background-color: blue;
+.health-ui-container.wrinkledPaper { /* Health Bar box */
+  position: relative !important;
+  background: none !important;
+  padding: 0px !important; margin: 0px !important;
+  width: 5% !important; height: 10% !important;
+  top: 70% !important; left: 15% !important;
+  rotate: 270deg !important;
 }
 
+div.health-ui-bar-container { /* Health Bar */
+  position: relative !important;
+  scale: 150% 300% !important;
+}
 
-div.health-ui-bar.main.wrinkledPaper {
-  background-image: none;
+.health-ui-heart { /* Health Bar icon */
+  position: relative !important;
+  padding: 0px !important; 
+  margin: 0px !important;
+  scale: 175% !important;
+  rotate: 90deg !important;
+}
+
+.flag-score-container{ /* Flag Score box */
+  position: relative !important;
+  top: 54% !important; left: 11.5% !important;
+  width: 6% !important;
+  padding: 0px 0px 0px 0px !important; margin: 0px !important;
+  background: none;
+  rotate: -90deg !important;
+  z-index:1 !important;
+  scale: 300%;
+}
+.flag-score-item{ /* Flag Score diamonds */
+  position: relative !important;
+  padding: 0px !important; margin: 20px 0px 0px 0px !important;
+  gap: 4px !important;
+}
+.flag-score-icon{ /* Flag Score shield icon */
+  display: none !important;
+}
+
+/* Team 3 - Blue color (3rd center-dot) */
+.flag-score-item:nth-of-type(1) .flag-score-point-el.returned .center-dot:nth-of-type(3) {
+  --team-color: #800000; /* Team 3 color (blue) */
+  fill: var(--team-color);
+  stroke: var(--team-color);
+}
+
+.flag-score-item:nth-of-type(2) .flag-score-point-el.returned .center-dot:nth-of-type(3) {
+  --team-color: #000080; /* Team 6 color (purple) */
+  fill: var(--team-color);
+  stroke: var(--team-color);
 }
