@@ -1,0 +1,19 @@
+const discordButton = document.querySelector('.main-menu-promo-banner.wrinkledPaper.wrinkled-paper-mask');
+
+if (discordButton) {
+    // Change the background image
+    discordButton.style.backgroundImage = "url('https://raw.githubusercontent.com/RiptideN1/Riptide-s-custom-textures/refs/heads/main/RK%20JOIN.png')";
+
+    // Clone the element to remove all existing event listeners
+    const newButton = discordButton.cloneNode(true);
+    discordButton.parentNode.replaceChild(newButton, discordButton);
+
+    // Add a new event listener to redirect
+    newButton.addEventListener("click", function(event) {
+        event.stopImmediatePropagation(); // Stop other listeners
+        event.preventDefault(); // Prevent any default behavior
+        window.location.href = "https://discord.gg/swQT5FEq"; // Redirect to new Discord
+    });
+} else {
+    console.log("Discord button not found.");
+}
